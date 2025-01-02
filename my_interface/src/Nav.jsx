@@ -3,7 +3,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "./App.css";
+import { useState } from "react";
 function Nav() {
+  const [showMediaIcon,setShowMediaIcon]=useState();
   return (
     <>
       <nav className="Navigation">
@@ -13,7 +15,7 @@ function Nav() {
             <spam>T</spam>hapa
           </h2>
         </div>
-        <div className="menu_link">
+        <div className={showMediaIcon ? " mobile-menu-link" : "menu_link"}>
           <ul>
             <li>
               <a href="#">HOME</a>
@@ -25,7 +27,7 @@ function Nav() {
               <a href="#">CONTACT</a>
             </li>
             <li>
-              <a href="#">SERVCES</a>
+              <a href="#">SERVICES</a>
             </li>
           </ul>
         </div>
@@ -48,9 +50,9 @@ function Nav() {
             </li>
           </ul>
         </div>
-        <div className="hamburger-menu">
-          <a href="#">
-            <RxHamburgerMenu />
+        <div className="hamburger-menu" onClick={()=>setShowMediaIcon(!showMediaIcon)}>
+          <a href="#" >
+            <RxHamburgerMenu  style={{color:"black", fontSize:"30px"}}/>
           </a>
         </div>
       </nav>
