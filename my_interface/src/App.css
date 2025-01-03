@@ -21,11 +21,12 @@ a {
   background-color: rgb(236, 232, 226);
   box-shadow: 2px 6px 6px 8px #888888;
 }
-.name {
+.logo {
   display: grid;
   grid-column: 2/3;
-  justify-content: center;
+  
   align-items: center;
+
 }
 .menu_link {
   grid-column: 3/4;
@@ -45,7 +46,7 @@ a {
 .social-media ul {
   height: 6rem;
   display: flex;
-  margin-left: 60%;
+  margin-left: 76%;
   align-items: center;
   gap: 10px;
 }
@@ -73,7 +74,7 @@ a {
     margin-right: 5%;
   }
   .mobile-menu-link {
-    background-color: rgb(234, 197, 197);
+    background-color: rgb(143, 122, 194);
     height: 10rem;
     width: 100%;
     display: flex;
@@ -83,10 +84,12 @@ a {
     position: absolute;
     top: 6rem;
     z-index: 10000;
+    box-shadow: 2px 6px 8px 6px gray;
   }
   .mobile-menu-link ul {
     display: flex;
     flex-direction: column;
     gap: 23px;
+    color: white;
   }
 }

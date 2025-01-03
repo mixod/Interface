@@ -1,12 +1,14 @@
-import './App.css'
-import Nav from './Nav'
+// import './App.css'
+// import Nav from './Nav'
+
+import Navvvvv from "./Navvvvv"
 
 function App() {
 
 
   return (
     <>
-    <Nav/>
+      <Navvvvv/>
     </>
   )
 }

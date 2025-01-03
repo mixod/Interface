@@ -4,18 +4,16 @@ import { FaGithubSquare } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "./App.css";
 import { useState } from "react";
+
 function Nav() {
-  const [showMediaIcon,setShowMediaIcon]=useState();
+ const [showMediaIcon,setShowMediaIcon]=useState();
   return (
     <>
       <nav className="Navigation">
-        <div className="name">
-          <h2>
-            <spam>S</spam>angram
-            <spam>T</spam>hapa
-          </h2>
+        <div className="logo">
+            <img src="../public/image/Black___White_Minimalist_Business_Logo-removebg-preview.png"></img>
         </div>
-        <div className={showMediaIcon ? " mobile-menu-link" : "menu_link"}>
+        <div className={showMediaIcon ? "mobile-menu-link" : "menu_link "}>
           <ul>
             <li>
               <a href="#">HOME</a>
@@ -39,20 +37,23 @@ function Nav() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/mixo__10/">
                 <FaInstagramSquare />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/mixod">
                 <FaGithubSquare />
               </a>
             </li>
           </ul>
         </div>
-        <div className="hamburger-menu" onClick={()=>setShowMediaIcon(!showMediaIcon)}>
-          <a href="#" >
-            <RxHamburgerMenu  style={{color:"black", fontSize:"30px"}}/>
+        <div  className="hamburger-menu" onClick={()=> setShowMediaIcon(!showMediaIcon)}>
+         
+       
+       
+          <a href="#">
+            <RxHamburgerMenu style={{ color: "black", fontSize: "30px" }} />  
           </a>
         </div>
       </nav>
