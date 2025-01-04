@@ -1,14 +1,18 @@
 // import './App.css'
 // import Nav from './Nav'
 
-import Navvvvv from "./Navvvvv"
+import Aabash from "./Aabash"
+import Navigations from "./Navigations"
+
+// import Navvvvv from "./Navvvvv"
 
 function App() {
 
 
   return (
     <>
-      <Navvvvv/>
+     <Aabash/>
+     <Navigations/>
     </>
   )
 }
